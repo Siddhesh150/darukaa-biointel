@@ -1,0 +1,24 @@
+# Core service
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+pydantic>=2.7,<3.0
+sqlalchemy>=2.0,<3.0
+httpx>=0.27
+python-multipart>=0.0.9
+
+# Reasoning & retrieval (no API key required)
+numpy>=1.26
+networkx>=3.2
+
+# Frontend
+streamlit>=1.35
+
+# Optional upgrades - uncomment to enable
+# sentence-transformers>=3.0     # EMBEDDING_PROVIDER=sentence_transformers
+# psycopg[binary]>=3.1           # DATABASE_URL=postgresql+psycopg://...
+# pgvector>=0.2                  # VECTOR_STORE=pgvector
+# pypdf>=4.2                     # ingest PDFs dropped into data/evidence/corpus/
+
+# Dev
+pytest>=8.0
+ruff>=0.5
